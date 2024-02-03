@@ -1,0 +1,12 @@
+.github-icon {
+    height: 35px;
+    width: 35px;
+    opacity: .6;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+  }
+  
+  .github-icon:hover {
+    opacity: 1;
+  }

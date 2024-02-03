@@ -1,0 +1,239 @@
+.resume-prev-container {
+    height: 842px;
+    width: 595px;
+    border: 1px solid rgba(158, 158, 158, 0.541);
+    display: grid;
+    grid-template: 160px 1fr / 200px 1fr;
+    flex-shrink: 0;
+    color: rgb(53, 53, 53);
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    background-color: white;
+    overflow: hidden;
+    position: sticky;
+    top: 40px;
+    overflow-wrap: anywhere;
+  }
+
+
+  .resume-header {
+    background-color: rgb(245, 245, 245);
+    grid-column: 2 / -1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    padding: 10px;
+  }
+  
+  .resume-header .name {
+    font-size: 1.6rem;
+    font-weight: 600;
+  }
+  
+  .resume-header hr {
+    width: 80px;
+  }
+  
+  .resume-header .role {
+    font-size: .9rem;
+    font-weight: 400;
+  }
+  
+
+  .sidebar {
+    font-weight: 300;
+    background-color: rgb(37, 56, 71);
+    color: white;
+    grid-row: 1 / -1;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar hr {
+    background-color: white;
+  }
+  
+
+  .avatar {
+    height: 120px;
+    width: 120px;
+    overflow: hidden;
+    border: 2px solid white;
+    border-radius: 50%;
+    background-color: white;
+    margin: 16px 0;
+    align-self: center;
+    flex-shrink: 0;
+  }
+  
+  .avatar img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .sidebar-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 24px;
+  }
+  
+
+  .contact {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .img-and-details {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+
+  .education-info-container {
+    line-height: 1rem;
+  }
+  
+  .education-info-title {
+    font-weight: 600;
+  }
+  
+  .institution span {
+    font-style: italic;
+  
+  }
+  
+
+  .reference-container {
+    line-height: 1rem;
+  }
+  
+  .reference-container .name {
+    font-weight: 600;
+  }
+  
+  .reference-container .role-and-company {
+    font-size: .63rem;
+  }
+  
+  .reference-container :is(.email, .phone-number) b {
+    font-weight: 600;
+  }
+  
+
+  .resume-main {
+    grid-row: 2 / -1;
+    grid-column: 2 / -1;
+    padding: 30px 25px;
+    font-weight: 600;
+  }
+  
+  .main-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+  
+
+  .work-container {
+    height: min-content;
+    display: grid;
+    grid-template: 1rem 1rem 1fr / 1fr 1fr;
+  }
+  
+  .work-container .role {
+    font-weight: 700;
+    font-size: .72rem;
+  }
+  
+  .work-time-period {
+    color: grey;
+    place-self: start end;
+  }
+  
+  .company {
+    font-style: italic;
+    font-weight: 600;
+    color: grey;
+  }
+  
+  .description {
+    grid-column: 1 / -1;
+    padding: 6px 0 0 0;
+  }
+  
+  .main-sections .section-content {
+    gap: 25px;
+  }
+  
+  
+  .skills-container {
+    display: grid;
+    grid-template: 1fr / 1fr 1fr;
+  }
+  
+  .skill {
+    padding: 4px 0;
+    font-weight: 700;
+  }
+  
+  @media print {
+    html {
+      font-size: 22px;
+      height: 29.7cm;
+      width: 21cm;
+    }
+  
+    main {
+      padding: 0 !important;
+    }
+  
+    .maker-ui-container,
+    .github-icon {
+      display: none;
+    }
+    
+    .resume-prev-container {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+      border: none;
+      box-shadow: none;
+      height: 29.7cm;
+      width: 21cm;
+      margin: 0;
+      grid-template: 210px 1fr / 245px 1fr;
+      top: 0;
+      position: initial;
+    }
+  
+    .avatar {
+      height: 150px;
+      width: 150px;
+      border: 2px solid white;
+      margin: 26px 0;
+    }
+  
+    .sidebar-sections {
+      gap: 60px;
+      margin-top: 40px;
+    }
+  
+    .resume-main {
+      padding: 40px 35px;
+    }
+  
+    .img-and-details img {
+      height: 17px;
+      width: 17px;
+    }
+  }
+  
+  @page {
+    size: 21cm 29.7cm;
+    margin: 0;
+  }
