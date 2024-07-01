@@ -1,6 +1,6 @@
 # CV Maker
 
-The Odin Project CV Maker app using React.
+Build cv-maker with React
 
 ## CV Maker App Made with React
 
