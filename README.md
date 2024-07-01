@@ -1,9 +1,5 @@
 # CV Maker
 
-Build cv-maker with React
-
-## CV Maker App Made with React
-
 This web application is built using React and allows users to create and customize CVs. Users can input their information, customize the layout, and preview their CVs in real-time.
 
 ## Demo
